@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Call</title>
+</head>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+    }
+
+    h1 {
+        color: #333;
+    }
+
+    input[type="url"] {
+        width: 400px;
+        padding: 9px 5px;
+        font-size: 16px;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 14px;
+        cursor: pointer;
+    }
+
+    #dataContainer {
+        margin-top: 20px;
+    }
+
+    #promiseChainingResponse,
+    #asyncAwaitResponse {
+        margin-top: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        background-color: #f9f9f9;
+        white-space: pre;
+        font-family: monospace;
+        height: 300px;
+        overflow-y: auto;
+    }
+</style>
+<body>
+    <h1>JavaScript API Call</h1>
+    <input type="url" id="apiUrl" placeholder="Enter API URL" value="https://jsonplaceholder.typicode.com/users">
+    <button id="fetchButton">Fetch Data</button>
+    <div id="dataContainer">
+        <h2>Promise Chaining</h2>
+        <div id="promiseChainingResponse">
+
+        </div>
+        <hr>
+        <h2>Async/Await</h2>
+        <div id="asyncAwaitResponse">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
